@@ -7,14 +7,14 @@ pipeline {
 				}
 			}	
 		
-			stage("Cleaning stage") {
+			stage("Testing stage") {
 			
 				steps {
 					bat "mvn test"
 				}
 			}
 		
-			stage("Cleaning stage") {
+			stage("Package stage") {
 			
 				steps {
 					bat "mvn package"
